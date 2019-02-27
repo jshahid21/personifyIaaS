@@ -1,0 +1,30 @@
+undefined:1
+undefined
+^
+
+SyntaxError: Unexpected token u in JSON at position 0
+    at Object.parse (native)
+    at Object.callback (/home/opc/csvConverter/MBGoogle.js:31:19)
+    at /home/opc/csvConverter/node_modules/google-oauth-jwt/lib/request-jwt.js:43:29
+    at /home/opc/csvConverter/node_modules/google-oauth-jwt/lib/token-cache.js:63:4
+    at Array.forEach (native)
+    at fireCallbacks (/home/opc/csvConverter/node_modules/google-oauth-jwt/lib/token-cache.js:62:25)
+    at /home/opc/csvConverter/node_modules/google-oauth-jwt/lib/token-cache.js:78:13
+    at /home/opc/csvConverter/node_modules/google-oauth-jwt/lib/auth.js:21:19
+    at ReadFileContext.callback (/home/opc/csvConverter/node_modules/google-oauth-jwt/lib/auth.js:110:19)
+    at FSReqWrap.readFileAfterOpen [as oncomplete] (fs.js:367:13)
+download in progress...
+Feb 27, 2019 5:34:02 PM com.Analytics8.Birst.BirstA8XLS2CSV main
+SEVERE: null
+java.io.FileNotFoundException: ./downloads/*.xlsx (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.Analytics8.Birst.BirstA8XLS2CSV.main(BirstA8XLS2CSV.java:142)
+
+Exception in thread "main" java.lang.NullPointerException
+	at com.Analytics8.Birst.BirstA8XLS2CSV.main(BirstA8XLS2CSV.java:161)
+mv: cannot stat ‘./downloads/*.csv’: No such file or directory
+conversion to CSV in progress...
+data transfer in progress...
