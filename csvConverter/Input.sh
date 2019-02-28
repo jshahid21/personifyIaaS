@@ -2,6 +2,9 @@
 
 export PATH="/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/opc/.local/bin:/home/opc/bin"
 
+#change to javascript working direct (e.g. ~/csvConverter/)
+cd ~/csvConverter/
+
 #pull XLSX files to OCI VM ~/csvConverter/download folder
 /usr/bin/node ~/csvConverter/MBGoogle.js
 echo "download in progress..."

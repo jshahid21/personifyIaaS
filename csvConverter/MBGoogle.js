@@ -89,7 +89,7 @@ requestDownload({
 	else
 	{
 	// var file_name = url.parse(file_url).pathname.split('/').pop();
-	var file = fs.createWriteStream('~/csvConverter/downloads/' + filename );
+	var file = fs.createWriteStream('./downloads/' + filename );
 	file.write(body);
 	file.end();
 	console.log(filename + ' downloaded to downloads');
@@ -106,7 +106,7 @@ var filename_to_use = sanitize(filename);
 
 var sLogInfo = filename_to_use + ' :: ' + title + '\n';
 var fsLog = require('fs');
-fsLog.appendFile('~/csvConverter/filelog.log', sLogInfo, function(err) {
+fsLog.appendFile('./downloads/filelog.log', sLogInfo, function(err) {
 	if (err) throw err;
 	});
 
@@ -131,7 +131,7 @@ requestDownload({
 	{
 	var buffer = new Buffer(body);
 	// var file_name = url.parse(file_url).pathname.split('/').pop();
-	var file = fs.createWriteStream('~/csvConverter/downloads/' + filename_to_use );
+	var file = fs.createWriteStream('./downloads/' + filename_to_use );
 	file.write(buffer);
 	file.end();
 	console.log(filename_to_use + ' downloaded to downloads');
