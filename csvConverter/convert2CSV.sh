@@ -3,6 +3,6 @@
 
 for f in ./downloads/*.xlsx
 do
-java -jar ~/csvConverter/A8JXLS2CSV.jar "$f"
-mv ./downloads/*.csv ~/InputToOS
+java -jar ~/GDtoOCI/csvConverter/A8JXLS2CSV.jar "$f"
+mv ~/GDtoOCI/csvConverter/downloads/*.csv ~/GDtoOCI/InputToOS
 done
